@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'com.internal'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'log4j:log4j:1.2.17'
+}
