@@ -1,6 +1,7 @@
 package com.internal;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 
@@ -9,7 +10,7 @@ import static java.math.BigDecimal.valueOf;
 
 public class DiscountCalculator {
 
-    private static Logger logger = Logger.getLogger(DiscountCalculator.class);
+    private static final Logger logger= LoggerFactory.getLogger(DiscountCalculator.class);
 
     public BigDecimal calculateDiscount(BigDecimal ticketPrice, int customerAge) {
         if (customerAge < 5) {
